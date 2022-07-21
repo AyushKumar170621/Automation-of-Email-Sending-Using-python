@@ -5,22 +5,6 @@ First, we must Create a Gmail account.
 Then we must adjust Gmail account’s security settings to allow access from Python code.
 Turn Allow less secure app on.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Step 2: Import the following modules
 import smtplib
 import time
@@ -36,14 +20,10 @@ Step 3: Let’s set up a connection to our email server.
 We will provide the server address and port no. to initiate SMTP connection.
 now we will use smtp.ehlo to send an extended hello command.
 And then, we will use smtp.starttls to enable the  transport layer security (TLS) encryption.
+
 smtp=smtplib.SMTP('smtp.gmail.com',587)
 smtp.ehlo()
 smtp.starttls()
-
-                                                            
-
-
-                                                           				Figure 2 Sending mail through SMTP
 
 Step 4: Login to my gmail Account.
 Take input from user their email and password and then login.
